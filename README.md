@@ -32,10 +32,20 @@ Este é o frontend da aplicação desenvolvido com **Next.js 16** e **Turbopack*
    ```bash
    NEXT_PUBLIC_URL_LARAVEL=http://127.0.0.1:8000/api
    NEXT_PUBLIC_URL_TMDB=https://api.themoviedb.org/3
-   NEXT_PUBLIC_TMDB_TOKEN=eyJhbGciOiJIUzI1NiJ9eyJhdWQiOiIyZjQxMmI5ZGFlNGJhYzVmMDg4ZWMyYjc4MzNlMzkyMyIsIm5iZiI6MTc2OTAzODc1NC43MDcsInN1YiI6IjY5NzE2M2EyYjZjNzZkOGNiMDc3NDYxYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.OrS825kTj5c2D9SZdgRPiPczvBHCLRmgTtHhNav6Eyg
+   NEXT_PUBLIC_TMDB_TOKEN=
    ```
 
-5. Rode o projeto
+5. Para adquirir o token da API (TMDB):
+   1. Crie uma conta em The Movie Database (TMDB).
+   2. Acesse as configurações de API no seu perfil.
+   3. Gere um "API Read-Only Access Token".
+   4. Substitua no seu arquivo .env:
+
+   ```bash
+   NEXT_PUBLIC_TMDB_TOKEN={{seu_token_api}}
+   ```
+
+6. Rode o projeto
 
    ```bash
       pnpm dev
