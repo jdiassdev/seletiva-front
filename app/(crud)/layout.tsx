@@ -1,6 +1,9 @@
-// src/app/(dashboard)/layout.tsx
-import Link from "next/link";
 import React from "react";
+
+export const metadata = {
+  title: "BO7EN - Modulo de Ocorrencias",
+  description: "Modulo de gerenciamento de ocorrencias",
+};
 
 export default function CrudLayout({
   children,

@@ -1,9 +1,7 @@
 import axios from "axios";
 
-const TMDB_TOKEN =
-  process.env.NEXT_PUBLIC_TMDB_TOKEN ??
-  "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyZjQxMmI5ZGFlNGJhYzVmMDg4ZWMyYjc4MzNlMzkyMyIsIm5iZiI6MTc2OTAzODc1NC43MDcsInN1YiI6IjY5NzE2M2EyYjZjNzZkOGNiMDc3NDYxYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.OrS825kTj5c2D9SZdgRPiPczvBHCLRmgTtHhNav6Eyg";
-const BASE_URL = "https://api.themoviedb.org/3";
+const TMDB_TOKEN = process.env.NEXT_PUBLIC_TMDB_TOKEN;
+const BASE_URL = process.env.NEXT_PUBLIC_URL_TMDB;
 
 const apiFilms = axios.create({
   baseURL: BASE_URL,

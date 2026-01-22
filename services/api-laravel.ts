@@ -1,7 +1,8 @@
 import axios from "axios";
+const BASE_URL = process.env.NEXT_PUBLIC_URL_LARAVEL
 
 const api = axios.create({
-  baseURL: "http://127.0.0.1:8000/api",
+  baseURL: BASE_URL,
   headers: {
     Accept: "application/json",
     "Content-Type": "application/json",

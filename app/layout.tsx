@@ -1,6 +1,10 @@
 import "./globals.css";
 import Navbar from "../components/layout/NavBar";
-import { Toolbar } from "@mui/material";
+
+export const metadata = {
+  title: "BO7EN - Aplicação fullstack",
+  description: "Aplicação fullstack",
+};
 
 export default function RootLayout({
   children,
@@ -9,10 +13,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <header className="">
-        <Navbar />
-      </header>
-      <body>{children}</body>
+      <body>
+        <header className="">
+          <Navbar />
+        </header>
+
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
